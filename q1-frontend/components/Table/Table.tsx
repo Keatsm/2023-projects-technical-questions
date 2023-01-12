@@ -68,12 +68,14 @@ export default function Table() {
             </div>
             <div className={styles.item}>
               {content.updates.map(object => {
-                  return <div className={styles.item}>
-                    {object.update}
-                    <div className={styles.date}>
-                    {object.date}
+                  return (
+                    <div className={styles.update}>
+                      {object.update}
+                      <div className={styles.date}>
+                      {object.date}
+                      </div>
                     </div>
-                    </div>;
+                  )
               })}
             </div>
           </div>
