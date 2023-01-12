@@ -18,3 +18,9 @@
     flex: 1 1 0px;
     flex-direction: column;
 }
+
+.date {
+    color: blue;
+    font-size: 10px;
+    text-align: right;
+}

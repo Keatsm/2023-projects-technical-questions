@@ -45,7 +45,7 @@ export default function Table() {
       },
       {
         alert: 'Done!',
-        status: '<YOUR NAME>',
+        status: 'Keats Mackay',
         updates: []
       }
     ]
@@ -67,7 +67,14 @@ export default function Table() {
               {content.status}
             </div>
             <div className={styles.item}>
-              {/* TODO: add updates */}
+              {content.updates.map(object => {
+                  return <div className={styles.item}>
+                    {object.update}
+                    <div className={styles.date}>
+                    {object.date}
+                    </div>
+                    </div>;
+              })}
             </div>
           </div>
         ))}
